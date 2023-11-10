@@ -1,0 +1,33 @@
+{
+  "name": "serverless-leaderboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && cp -r node_modules ./build && zip -r build.zip ./build",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.126",
+    "@types/node": "^20.9.0",
+    "@types/uuid": "^9.0.7",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.445.0",
+    "@aws-sdk/lib-dynamodb": "^3.445.0",
+    "@middy/core": "^4.6.6",
+    "@middy/http-error-handler": "^4.6.6",
+    "@middy/http-json-body-parser": "^4.6.6",
+    "@middy/validator": "^4.6.6",
+    "aws-sdk": "^2.1490.0",
+    "install": "^0.13.0",
+    "json-schema-to-ts": "^2.9.2",
+    "npm": "^10.2.3",
+    "uuid": "^9.0.1"
+  }
+}
